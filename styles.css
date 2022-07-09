@@ -133,7 +133,7 @@ div button:last-child {
 		padding: 1em;
 		height: 65vh;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: flex-start;
 	}
 
@@ -141,5 +141,24 @@ div button:last-child {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+	}
+
+	form > div {
+		flex-direction: column;
+		flex: 0 0 15%;
+	}
+
+	input,
+	select {
+		border: none;
+	}
+
+	form div:last-child {
+		width: 100%;
+	}
+
+	.userCards {
+		flex-flow: column;
+		text-align: center;
 	}
 }
