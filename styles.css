@@ -1,0 +1,145 @@
+body {
+	font-family: Verdana;
+	margin: 0;
+}
+
+header {
+	background-color: dodgerblue;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5em;
+	color: white;
+}
+
+header h1 {
+	flex: 1;
+	margin: 0;
+	font-weight: 400;
+}
+
+header nav {
+	flex: 3;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:first-child {
+	font-weight: bold;
+}
+
+main {
+	background-color: white;
+	color: dimgray;
+	margin: 0 1em;
+}
+
+h2 {
+	font-size: 2em;
+	margin: 0.25em 0;
+}
+
+form {
+	width: 50%;
+	margin: 1em 25%;
+	padding: 1em;
+	height: 250px;
+	border: solid 1px black;
+	border-radius: 7px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+form h3 {
+	margin: 0;
+	font-size: 2em;
+}
+
+.input {
+	display: flex;
+	justify-content: space-between;
+}
+
+input,
+select {
+	box-sizing: border-box;
+	width: 80%;
+}
+
+.input label {
+	font-weight: bold;
+}
+
+form div:last-child {
+	display: flex;
+	justify-content: center;
+}
+
+div button {
+	border: solid 1px black;
+	padding: 0.25em 0.5em;
+}
+div button:last-child {
+	background-color: dodgerblue;
+	color: white;
+}
+
+.userCards {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.individualUser {
+	margin: 0.5em;
+	flex: 0 0 calc(33% - 3em);
+	border: solid 1px black;
+	border-radius: 7px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 1em;
+}
+
+.individualUser h3 {
+	margin: 0;
+	font-weight: bold;
+}
+
+@media (max-width: 500px) {
+	header {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		height: 15vh;
+	}
+
+	nav {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-around;
+	}
+
+	form {
+		box-sizing: border-box;
+		width: 95%;
+		margin: 1em 2.5%;
+		padding: 1em;
+		height: 65vh;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+
+	.input {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}

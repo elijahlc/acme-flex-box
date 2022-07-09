@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Acme Layout</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Acme Layout</h1>
+			<nav>
+				<a href="#">Users</a>
+				<a href="#">Departments</a>
+				<a href="#">Contact</a>
+			</nav>
+		</header>
+		<main>
+			<h2>Users</h2>
+			<form action="#">
+				<h3>Create A User</h3>
+				<div class="input">
+					<label for="firstName">First Name</label>
+					<input
+						type="text"
+						id="firstName"
+						placeholder="Jane"
+						name="firstName"
+					/>
+				</div>
+				<div class="input">
+					<label for="lastName">Last Name</label>
+					<input type="text" id="lastName" placeholder="Doe" name="lastName" />
+				</div>
+				<div class="input">
+					<label for="dept">Department</label>
+					<select id="dept" name="dept">
+						<option value="">-- None --</option>
+					</select>
+				</div>
+				<div>
+					<button>Clear</button>
+					<button>Save</button>
+				</div>
+			</form>
+			<section class="userCards">
+				<div class="individualUser">
+					<h3>User A</h3>
+					<p>Some text for the user</p>
+				</div>
+				<div class="individualUser">
+					<h3>User A</h3>
+					<p>
+						Some text for the user. Some text for the user. Some text for the
+						user. Some text for the user. Some text for the user. Some text for
+						the user.
+					</p>
+				</div>
+				<div class="individualUser">
+					<h3>User A</h3>
+					<p>Some text for the user</p>
+				</div>
+				<div class="individualUser">
+					<h3>User A</h3>
+					<p>Some text for the user</p>
+				</div>
+				<div class="individualUser">
+					<h3>User A</h3>
+					<p>Some text for the user</p>
+				</div>
+				<div class="individualUser">
+					<h3>User A</h3>
+					<p>Some text for the user</p>
+				</div>
+				<div class="individualUser">
+					<h3>User A</h3>
+					<p>Some text for the user</p>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
